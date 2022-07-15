@@ -1,8 +1,8 @@
 body {
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
 }
 
+/* NavBar Css Starts */
 @media (min-width: 992px) {
     .navbar-brand {
         position: absolute;
@@ -11,6 +11,18 @@ body {
     }
 }
 
+.navbar {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+/* NavBar Css Ends */
+
+/* Banner Section Starts */
 .btn.btn-primary {
     background: #fab95b;
     border-color: #fab95b;
@@ -32,6 +44,9 @@ body {
     line-height: 1.9;
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     width: 100%;
+    height: 45%;
+    justify-content: center;
+    align-items: center;
 }
 
 .lead,
@@ -41,21 +56,48 @@ p {
     word-spacing: 1.5px;
 }
 
-.navbar {
-    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.caption {
+    text-align: left;
+    align-self: center;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+#banner1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-.nav-link
-{
-    font-size: 15px;
+
+@media (max-width: 575px) {
+    #banner1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 }
+
+/* Banner Section Ends */
+
+/* Boxes Section Starts */
+.boxes-header {
+    position: relative;
+}
+
+.boxes-section-title {
+    text-align: center;
+}
+
 #boxes-section,
 h2,
 h3 {
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
-
 
 .box {
     padding: 30px;
@@ -87,7 +129,9 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* About Us Section */
+/* Boxes Section Ends */
+
+/* About Us Section Starts*/
 #text {
     font-size: 1.0rem;
     color: grey;
@@ -100,10 +144,32 @@ h3 {
     height: 4px;
 }
 
-#progress-bar {
+#progress-bar1 {
     background-color: orange;
     position: relative;
     border-radius: 4px;
+    width: 89%;
+}
+
+#progress-bar2 {
+    background-color: orange;
+    position: relative;
+    border-radius: 4px;
+    width: 75%;
+}
+
+#progress-bar3 {
+    background-color: orange;
+    position: relative;
+    border-radius: 4px;
+    width: 94%;
+}
+
+#progress-bar4 {
+    background-color: orange;
+    position: relative;
+    border-radius: 4px;
+    width: 94%;
 }
 
 .tooltip-inner {
@@ -136,13 +202,13 @@ h3 {
     border-left-color: orange !important;
 }
 
+/* About Section Ends */
 
 
+/* Slider Section Starts */
 .white-heading {
     color: #ffffff;
 }
-
-
 
 .myslider {
     min-height: 575px;
@@ -152,6 +218,7 @@ h3 {
     padding-bottom: 50px;
     background-position: center;
     background-size: cover;
+    text-align: center;
 }
 
 .myslider4_indicators .carousel-indicators::-webkit-scrollbar {
@@ -182,6 +249,10 @@ h3 {
     color: #000;
     background: #fff;
     border: 2px solid #fff;
+}
+
+.blog-title {
+    position: relative;
 }
 
 .my_slide {
@@ -226,6 +297,9 @@ h3 {
     color: white;
 }
 
+/* Slider Section Ends */
+
+/* Blog Section Starts */
 #text1 {
     font-size: 1.4rem;
 }
@@ -249,12 +323,15 @@ h3 {
     margin-bottom: 15px;
 }
 
-#r1 {
+#read {
     color: #fab95b;
     font-size: 1.0rem;
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+/* Blog Section Ends */
+
+/* Contact Form Section Starts */
 .form_header {
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
@@ -339,6 +416,9 @@ input[type="text"]:focus {
     text-indent: left;
 }
 
+/* Contact Form Section Ends */
+
+/* Footer Section Starts */
 ul {
     line-height: 40px;
     color: grey;
@@ -348,35 +428,27 @@ ul {
 }
 
 .icons {
-    padding: 10px 0; justify-content: space-between;
+    padding: 10px 0;
+    justify-content: space-between;
 
 }
-#h1
-{
+
+#h1 {
     font-size: 1.4rem;
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
-#copy_right
-{
+
+#copy_right {
     color: grey;
+    text-align: center;
     font-size: 0.9rem;
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 }
-#banner1
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+.footer-links {
+    text-align: left;
 }
-@media (max-width: 575px) {
-    #banner1
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-}
+
+/* Footer Section Ends */
